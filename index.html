@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Elia, a Web Developer and Software Developer from Kigali, Rwanda, showcasing projects, skills and professional services.">
+  <meta name="keywords" content="Web Developer, Software Developer, Portfolio, Elia Mugisha, Kigali, Rwanda, HTML, CSS, JavaScript">
+  <meta name="author" content="Elia Mugisha">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Elia | Web Developer & Software Developer">
+  <meta property="og:description" content="Portfolio of Elia, a Web Developer and Software Developer from Kigali, Rwanda, showcasing projects, skills and professional services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourdomain.com">
+  <meta property="og:image" content="https://www.yourdomain.com/images/og-image.jpg">
+  
+  <title>Elia | Web Developer & Software Developer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">ELIA</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#" class="btn btn-nav" id="cv-btn">Download CV</a>
+      </div>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm <span class="gradient-text">Elia</span> 👋</p>
+        <h1 class="hero-title">
+          Web Developer &<br>
+          <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+        </h1>
+        <p class="hero-description">
+          I build modern, responsive and user-friendly digital experiences that turn ideas into real-world solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-icon" id="social-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-icon" id="social-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="social-icon" id="social-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="social-icon" id="social-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="window-title">portfolio.js</span>
+          </div>
+          <div class="window-body">
+            <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+            <div class="code-line">  <span class="code-prop">name</span>: <span class="code-string">"Elia Mugisha"</span>,</div>
+            <div class="code-line">  <span class="code-prop">role</span>: <span class="code-string">"Web Developer"</span>,</div>
+            <div class="code-line">  <span class="code-prop">location</span>: <span class="code-string">"Kigali, Rwanda"</span>,</div>
+            <div class="code-line">  <span class="code-prop">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],</div>
+            <div class="code-line">  <span class="code-prop">passion</span>: <span class="code-keyword">true</span></div>
+            <div class="code-line">};</div>
+            <div class="code-line"><span class="code-keyword">export default</span> <span class="code-var">developer</span>;</div>
+          </div>
+        </div>
+        <div class="floating-badge">
+          <i class="fas fa-code"></i>
+          <span>Clean Code</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-rocket"></i>
+          <span>Fast Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-image reveal">
+          <div class="image-wrapper">
+            <img src="C:\Users\HP\Documents\portfolio\ed19841c-72ef-4e43-aef5-0d724e7b9829.png" alt="Elia Mugisha" loading="lazy" onerror="this.style.display='none'">
+            <div class="image-fallback">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <h3>I'm a passionate developer from Kigali, Rwanda</h3>
+          <p>
+            I'm a passionate developer from Kigali, Rwanda, interested in building modern websites and software applications. I enjoy transforming ideas into practical digital solutions and continuously improving my skills through real-world projects.
+          </p>
+          <div class="about-details">
+            <div class="about-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kigali, Rwanda</span>
+            </div>
+            <div class="about-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Web Developer & Software Developer</span>
+            </div>
+            <div class="about-item">
+              <i class="fas fa-laptop-code"></i>
+              <span>Available for freelance & full-time</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" id="about-cv-btn">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <p class="section-subtitle reveal">Technologies and tools I work with</p>
+      
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend Knowledge</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+        
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-progress reveal">
+        <h3 class="skills-progress-title">Proficiency Levels</h3>
+        <div class="progress-bars">
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">HTML</span>
+              <span class="progress-percent">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="95"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">CSS</span>
+              <span class="progress-percent">90%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">JavaScript</span>
+              <span class="progress-percent">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">React Knowledge</span>
+              <span class="progress-percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">Node.js</span>
+              <span class="progress-percent">75%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <div class="progress-info">
+              <span class="progress-label">MySQL</span>
+              <span class="progress-percent">80%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-progress="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">Some of my recent work</p>
+      
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/project1.jpg" alt="Milk Dairy Management System" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-image-fallback">
+              <i class="fas fa-cow"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Milk Dairy Management System</h3>
+            <p>A web-based management system designed to manage dairy operations, users, milk records and business information.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/project2.jpg" alt="Sports News Website" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-image-fallback">
+              <i class="fas fa-newspaper"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Sports News Website</h3>
+            <p>A modern sports news platform for displaying the latest sports updates and allowing authorized managers to publish and manage sports news.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card reveal">
+          <div class="project-image">
+            <img src="images/project3.jpg" alt="Personal Portfolio Website" loading="lazy" onerror="this.style.display='none'">
+            <div class="project-image-fallback">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Personal Portfolio Website</h3>
+            <p>A modern responsive portfolio website showcasing my skills, projects and professional journey.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION ==================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Services</h2>
+      <p class="section-subtitle reveal">What I can do for you</p>
+      
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Building modern, responsive websites for individuals and businesses that look great on any device.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>UI/Frontend Development</h3>
+          <p>Creating beautiful, interactive and user-friendly interfaces with smooth animations and modern design.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Website Maintenance</h3>
+          <p>Improving, updating and maintaining existing websites to keep them secure, fast and up-to-date.</p>
+        </div>
+        
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Database Solutions</h3>
+          <p>Creating reliable database-driven applications and managing application data efficiently.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== STATISTICS SECTION ==================== -->
+  <section class="stats section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-suffix">+</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Passion</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number" data-target="24">0</div>
+          <div class="stat-suffix">/7</div>
+          <div class="stat-label">Learning</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience & Journey</h2>
+      <p class="section-subtitle reveal">My professional timeline</p>
+      
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Education</div>
+            <h3>Foundation in Technology</h3>
+            <p>Studied computer science and software development fundamentals, building a strong technical foundation for my career in web development.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">First Projects</div>
+            <h3>Started Building</h3>
+            <p>Developed my first web applications including the Milk Dairy Management System and Sports News Website, gaining hands-on experience with real-world problem solving.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Web Development</div>
+            <h3>Professional Growth</h3>
+            <p>Expanded expertise in frontend and backend technologies, working on responsive websites and database-driven applications for various clients and personal projects.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Future Goals</div>
+            <h3>Continuous Improvement</h3>
+            <p>Focused on mastering modern frameworks, contributing to open source projects, and building scalable software solutions that make a positive impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal">Let's Build Something Amazing Together 🚀</h2>
+      <p class="section-subtitle reveal">Have a project in mind? Let's talk about it.</p>
+      
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Kigali, Rwanda</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:eliasehama@gmail.com" id="contact-email-link" class="contact-link"><span id="contact-email">eliasehama@gmail.com</span></a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/eliasehama" id="contact-github-link" class="contact-link" target="_blank" rel="noopener noreferrer"><span id="contact-github">eliasehama</span></a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/in/elia-mugisha" id="contact-linkedin-link" class="contact-link" target="_blank" rel="noopener noreferrer"><span id="contact-linkedin">Elia Mugisha</span></a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/250793731595" id="contact-whatsapp-link" class="contact-link" target="_blank" rel="noopener noreferrer"><span id="contact-whatsapp">+250 793731595</span></a>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <span class="error-message" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <span class="error-message" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Elia Mugisha. All rights reserved.</p>
+      <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

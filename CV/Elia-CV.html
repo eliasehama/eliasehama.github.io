@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elia Mugisha - Curriculum Vitae</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
+      padding: 40px 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .cv-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 50px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    
+    .header {
+      text-align: center;
+      border-bottom: 3px solid #7c3aed;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
+    }
+    
+    .header h1 {
+      font-size: 2.5rem;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    
+    .header p {
+      color: #666;
+      font-size: 1.1rem;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+    }
+    
+    .section-title {
+      font-size: 1.3rem;
+      color: #7c3aed;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+      margin-bottom: 15px;
+    }
+    
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .info-label {
+      font-weight: 600;
+      color: #555;
+      min-width: 140px;
+    }
+    
+    .info-value {
+      color: #333;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    
+    th {
+      background: #7c3aed;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+    
+    td {
+      padding: 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    
+    .skill-tag {
+      background: #ede9fe;
+      color: #7c3aed;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    .language-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+    
+    .language-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #7c3aed;
+    }
+    
+    .language-name {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    
+    .language-levels {
+      font-size: 0.85rem;
+      color: #666;
+    }
+    
+    .interests-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    
+    .interest-item {
+      background: #f0f0f0;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+    
+    .referee {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 4px solid #7c3aed;
+    }
+    
+    .referee-name {
+      font-weight: 600;
+      color: #333;
+    }
+    
+    .referee-details {
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+    
+    .declaration {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      margin-top: 15px;
+    }
+    
+    .signature {
+      margin-top: 30px;
+      text-align: right;
+    }
+    
+    .signature-line {
+      border-top: 2px solid #333;
+      width: 200px;
+      display: inline-block;
+      padding-top: 10px;
+      font-weight: 600;
+    }
+    
+    .print-btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 14px 28px;
+      background: #7c3aed;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .print-btn:hover {
+      background: #6d28d9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+    }
+    
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+        padding: 30px;
+      }
+      .print-btn {
+        display: none;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .cv-container {
+        padding: 25px;
+      }
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      .language-grid {
+        grid-template-columns: 1fr;
+      }
+      .header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+    <div class="header">
+      <h1>Elia Mugisha</h1>
+      <p>Web Developer & Software Developer</p>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">I. Personal Identification</h2>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">First Name:</span>
+          <span class="info-value">Elia</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Surname:</span>
+          <span class="info-value">Mugisha</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Date of Birth:</span>
+          <span class="info-value">07/01/2007</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Place of Birth:</span>
+          <span class="info-value">Rwanda, East Province, Nyagatare District, Musheri Sector, Nyagatabire Cell</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Nationality:</span>
+          <span class="info-value">Rwandan</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Marital Status:</span>
+          <span class="info-value">Single</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">ID Number:</span>
+          <span class="info-value">1200780198232059</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Home Language:</span>
+          <span class="info-value">Kinyarwanda</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Address:</span>
+          <span class="info-value">Rwanda, East Province, Nyagatare District, Musheri Sector, Nyagatabire Cell</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Tel:</span>
+          <span class="info-value">0793731595</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Email:</span>
+          <span class="info-value">eliasehama@gmail.com</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Father's Name:</span>
+          <span class="info-value">Sehama Dan</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Mother's Name:</span>
+          <span class="info-value">Kamukama Jovia</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">II. Educational Background</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Period/Year</th>
+            <th>School/University</th>
+            <th>Field of Study</th>
+            <th>Award</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2019 - 2022</td>
+            <td>IDBK TSS KABARONDO<br>College Adegi Gituza</td>
+            <td>O'Level</td>
+            <td>O'Level Certificate</td>
+          </tr>
+          <tr>
+            <td>2012 - 2018</td>
+            <td>Top Care Nursery and Primary School</td>
+            <td>Primary</td>
+            <td>Primary Certificate</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">III. Language Proficiency</h2>
+      <div class="language-grid">
+        <div class="language-item">
+          <div class="language-name">English</div>
+          <div class="language-levels">Listening: Very Good | Written: Very Good | Spoken: Very Good</div>
+        </div>
+        <div class="language-item">
+          <div class="language-name">French</div>
+          <div class="language-levels">Listening: Basic | Written: Basic | Spoken: Basic</div>
+        </div>
+        <div class="language-item">
+          <div class="language-name">Kiswahili</div>
+          <div class="language-levels">Listening: Good | Written: Good | Spoken: Good</div>
+        </div>
+        <div class="language-item">
+          <div class="language-name">Kinyarwanda</div>
+          <div class="language-levels">Listening: Excellent | Written: Excellent | Spoken: Excellent</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">IV. Computer Skills</h2>
+      <p style="margin-bottom: 10px; color: #555;">I have skills in computer programs including Word, Excel, PowerPoint, software development, spreadsheet and database because I have studied ICT in my primary and O'Level and also computer science in A'Level.</p>
+      <div class="skills-list">
+        <span class="skill-tag">Microsoft Word</span>
+        <span class="skill-tag">Microsoft Excel</span>
+        <span class="skill-tag">Microsoft PowerPoint</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Software Development</span>
+        <span class="skill-tag">ICT</span>
+        <span class="skill-tag">Computer Science</span>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">V. Interests / Hobbies</h2>
+      <div class="interests-list">
+        <span class="interest-item">📚 Reading Books</span>
+        <span class="interest-item">🤝 Community Services</span>
+        <span class="interest-item">💬 Conversations</span>
+        <span class="interest-item">📰 Reading Newspapers</span>
+        <span class="interest-item">🎉 Social Events</span>
+        <span class="interest-item">⚽ Sport</span>
+        <span class="interest-item">🏊 Swimming</span>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">VI. References / Referees</h2>
+      <div class="referee">
+        <div class="referee-name">IDBK TSS</div>
+        <div class="referee-details">Kayonza, Rwanda</div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2 class="section-title">VIII. Declaration</h2>
+      <div class="declaration">
+        <p>I, <strong>ELIA MUGISHA</strong>, hereby declare that all information provided on this curriculum vitae are accurate, true and sincere.</p>
+      </div>
+      <div class="signature">
+        <div class="signature-line">ELIA MUGISHA</div>
+      </div>
+    </div>
+  </div>
+  
+  <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+</body>
+</html>
